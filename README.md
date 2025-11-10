@@ -1,1 +1,1 @@
-# weeklyschedule
+# RTH Weekly Schedule
