@@ -61,12 +61,12 @@
     <h1>RunTogether Heaton – Weekly Schedule</h1>
   </header>
 
-<iframe src="https://script.google.com/macros/s/AKfycbzbg35w3CTWDNQ5u_wAUJXChL2oqEmOgMrfQcIqtxVIz1vmWtwZOoNiUrB-H6e0_bqg7A/exec"></iframe>
+<!-- iframe src="https://script.google.com/macros/s/AKfycbzbg35w3CTWDNQ5u_wAUJXChL2oqEmOgMrfQcIqtxVIz1vmWtwZOoNiUrB-H6e0_bqg7A/exec"></iframe -->
 
   <footer>
     <span>RunTogether Heaton Park</span> • 
     <a href="https://www.facebook.com/runtogetherheaton/" target="_blank">Facebook</a> • 
-    <a href="https://www.strava.com/clubs/heatonparkrunners" target="_blank">Strava</a>
+    <a href="https://www.strava.com/clubs/runtogetherheatonpark" target="_blank">Strava</a>
   </footer>
 </body>
 </html>
