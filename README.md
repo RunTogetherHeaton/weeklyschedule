@@ -1,4 +1,4 @@
-<!doctype html>
+<!--doctype html-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -66,7 +66,7 @@
   <footer>
     <span>RunTogether Heaton Park</span> • 
     <a href="https://www.facebook.com/runtogetherheaton/" target="_blank">Facebook</a> • 
-    <a href="https://www.strava.com/clubs/runtogetherheatonpark" target="_blank">Strava</a>
+    <a href="https://www.strava.com/clubs/runtogetherheaton" target="_blank">Strava</a>
   </footer>
 </body>
 </html>
