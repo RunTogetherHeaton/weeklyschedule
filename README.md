@@ -57,7 +57,7 @@
 <body>
   <header>
     <!-- Optional: place a logo file (e.g. logo.png) in your repo and uncomment below -->
-    <img src="RTN_logo_cropped.png" alt="RunTogether Heaton logo">
+    <img src="RTH_logo_cropped.png" alt="RunTogether Heaton logo">
     <h1>RunTogether Heaton – Weekly Schedule</h1>
   </header>
 
