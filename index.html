@@ -316,6 +316,8 @@ function openScheduledRoute(run, route) {
 
   openRoute(route);
 
+  const isDrill = route.type === 'drill';
+
   document.getElementById('routeInfo').innerText =
     `${route.distance} km · ${run.runningGroup} · ${run.date} ${run.time}`;
 }
