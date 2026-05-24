@@ -445,22 +445,28 @@ if (isDrill) {
   document.getElementById('routeInfo').innerText =
     route.duration || '';
 
-  // Remove fixed map height for drills
-  document.getElementById('map').style.height =
-    'auto';
+  const mapEl = document.getElementById('map');
 
-  document.getElementById('map').innerHTML = `
+  // Remove Leaflet map if one exists
+  if (map) {
+    map.remove();
+    map = null;
+  }
+
+  // Shrink container to image size
+  mapEl.style.height = 'auto';
+
+  mapEl.innerHTML = `
     <img
       src="${route.image}"
       alt="${route.name}"
       style="
         width:100%;
         border-radius:12px;
-        max-height:500px;
-        object-fit:cover;
         display:block;
       "
-    />`;
+    />
+  `;
 
   document.getElementById('stravaLink').style.display =
     'none';
@@ -470,7 +476,6 @@ if (isDrill) {
 
   return;
 }
-
     // hide buttons
     document.getElementById('stravaLink').style.display =
       'none';
@@ -502,6 +507,9 @@ if (isDrill) {
   document.getElementById('gpxDownload').href =
     route.gpx || '';
 
+  document.getElementById('map').style.height =
+  '60vh';
+  
   setTimeout(() => {
     if (map) map.remove();
 
