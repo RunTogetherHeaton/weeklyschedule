@@ -216,16 +216,16 @@
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
      "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle over to the top of Angina.\nJog down to the first bin and max effort on way back. Same again for the second and third bins then second then first.\nAfter that any order or combination you want or just have a rest.\nFinish off with a few short ones to the third bench before heading back to the car park for cool down"
-  },
+ },
 
-  {
+ {
     "id": 102,
     "name": "Trains",
     "category": "drill",
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall ina line/train at a comfortable (easy 5k) pace in.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before heading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
-},
+ },
 
  {
     "id": 103,
@@ -234,7 +234,7 @@
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises.\nHead out towards the path around the golf course/bell tower hill for 1 minute, turn around and try to get back in  the same time\nRepeat for 2mins, 3mins, 2mins, and finally 1min.\nOption for bell tower sprints  before heading back to the car park for cool down."
-},
+ },
 
  {
     "id": 104,
@@ -243,6 +243,23 @@
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle to the top of Sainsbury's Hill.\nJog / Easy Run down the hill to the bottom of the Pitch & Putt Hill.\nStrong effort on the uphill to the stop line.\nRecovery slow jog or walk across the path back to the start. \nAfter two repetitions try it the opposite way, down pitch and putt hill easy and up Sainsburys Hill iwth effort.\nWhen you've had enough head back to the car park for cool down."
-}
- 
+ },
+
+ {
+    "id": 105,
+    "name": "Football Pitches",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run past the house down donkey hill turning right at the top of the field following the path to the football pitches.\nWarm-ups round the perimiter - high knees, lunges, side shuffles, jogs, and sprintsetc.<nLine up in three or four 'teams' of equal numbers on gthe goal line of the pitch.<nThe first member of each team will sprint hard to the marker a quarter of the way up the pitch before jogging back.<nRepeat until all team members have done the first rep. Same again for the second rep but this time sprinting to the halfway line before jogging back.<nThird rep is three quarters and final rep is the full length of the pitch.<nMix it up as much as you like. <nOptional run around the pitch and the session leader will shout either left hand, right hand or both hands at random intervals. Runners must touch the floow as diredcted before conitnuing to run.<nShort jog back to the car park for cool down stretches."
+ },
+
+ {
+    "id": 106,
+    "name": "Horseshoe Meet & Retreat",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run past the house down Angina Hill turning right into the bowl two-thirds of the way down, then some quick warm-up exercises\nForm two groups at either end of the horseshoe path - picking your opponent carefully..<nFirst person in each line runs along the left hand side of the path until they meet, crossing over behind each other before running back to the star, again keeping to the left. <nThe idea is to get back before your opponent - but don't worry if your opponent is faster as this session has a natural handicap so if you are both putting your best effort in then it should be reasonably evenly matched as the faster runner will have to run further.<nSwap sides after a few repetitions to see which side is 'easier'<nRun back to the car park for cool down stretches."
+ }
 ]
