@@ -423,6 +423,12 @@ function openScheduledRoute(run, route) {
 }
   
 function openRoute(route) {
+   // Always open detail page at top
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  
   document.getElementById('homeView').style.display = 'none';
   document.getElementById('scheduleView').style.display = 'none';
   document.getElementById('routeView').style.display = 'block';
