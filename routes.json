@@ -224,7 +224,16 @@
     "category": "drill",
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
-    "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall ina line/train at a comfortable (easy 5k) pace in.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before ehading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
+    "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall ina line/train at a comfortable (easy 5k) pace in.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before heading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
+},
+
+ {
+    "id": 103,
+    "name": "Pyramids 1-2-3-2-1 ",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run to the Heaton Hall Lions for quick warm-up exercises.\nHead out towards the path around the golf course/bell tower hill for 1 minute, turn around and try to get back in  the same time\nRepeat for 2mins, 3mins, 2mins, and finally 1min.\nOption for bell tower sprints  before heading back to the car park for cool down."
 }
  
 ]
