@@ -216,5 +216,15 @@
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
      "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle over to the top of Angina.\nJog down to the first bin and max effort on way back. Same again for the second and third bins then second then first.\nAfter that any order or combination you want or just have a rest.\nFinish off with a few short ones to the third bench before heading back to the car park for cool down"
-  }
+  },
+
+  {
+    "id": 102,
+    "name": "Trains",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall ina line/train at a comfortable (easy 5k) pace in.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before ehading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
+}
+ 
 ]
