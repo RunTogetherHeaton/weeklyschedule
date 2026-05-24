@@ -531,27 +531,37 @@ function showHome() {
     'routeView'
   ).style.display = 'none';
 
+  // Came from Upcoming Runs
+  if (previousSection === 'schedule') {
+    document.getElementById(
+      'scheduleView'
+    ).style.display = 'block';
+
+    document.getElementById(
+      'homeView'
+    ).style.display = 'none';
+
+    return;
+  }
+
+  // Came from route catalogue
   document.getElementById(
     'homeView'
-  ).style.display =
-    previousSection === 'routes'
-      ? 'block'
-      : 'none';
+  ).style.display = 'block';
 
   document.getElementById(
     'scheduleView'
-  ).style.display =
-    previousSection === 'schedule'
-      ? 'block'
-      : 'none';
+  ).style.display = 'none';
 
-  // If returning to routes,
-  // show category menu
-  if (previousSection === 'routes') {
-    showRouteCategories();
-  }
+  // Show catalogue, not categories
+  document.getElementById(
+    'routeCategories'
+  ).style.display = 'none';
+
+  document.getElementById(
+    'routesCatalogue'
+  ).style.display = 'block';
 }
-
 function setCategoryFilter(category) {
   activeCategory = category;
   renderGrid();
