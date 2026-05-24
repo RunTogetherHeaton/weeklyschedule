@@ -409,9 +409,19 @@ function openScheduledRoute(run, route) {
 
   openRoute(route);
 
-  document.getElementById('routeInfo').innerText =
-    `${route.distance} km · ${run.runningGroup} · ${run.date} ${run.time}`;
+  const isDrill =
+    route.category === 'drill';
+
+  const sessionInfo = isDrill
+    ? route.duration || ''
+    : `${route.distance} km`;
+
+  document.getElementById(
+    'routeInfo'
+  ).innerText =
+    `${sessionInfo} · ${run.runningGroup || ''} · ${run.date} ${run.time || ''}`;
 }
+  
 function openRoute(route) {
   document.getElementById('homeView').style.display = 'none';
   document.getElementById('scheduleView').style.display = 'none';
