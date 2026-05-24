@@ -445,6 +445,9 @@ function openRoute(route) {
     document.getElementById('routeInfo').innerText =
       route.duration || '';
 
+     // remove fixed map height
+    document.getElementById('map').style.height = 'auto';
+
     // replace map with image
     document.getElementById('map').innerHTML = `
       <img
@@ -471,6 +474,9 @@ function openRoute(route) {
   // normal route behaviour
   document.getElementById('routeInfo').innerText =
     `${route.distance} km`;
+
+  // restore map height
+  document.getElementById('map').style.height = '60vh';
 
   document.getElementById('map').style.display = 'block';
 
