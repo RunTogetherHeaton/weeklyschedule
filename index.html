@@ -101,6 +101,31 @@
       cursor: pointer;
       color: #aaa;
     }
+
+    .category-grid {
+  display: grid;
+  gap: 16px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.category-btn {
+  background: #1b2130;
+  border: none;
+  color: white;
+  padding: 28px;
+  border-radius: 16px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-btn:hover {
+  transform: scale(1.02);
+  background: #242d40;
+}
+    
 /* Upcoming runs layout only */
 #scheduleGrid {
   display: flex;
@@ -123,34 +148,43 @@
   <button class="btn" onclick="showSection('routes')">Routes</button>
 </div>
 
-<!-- ROUTES -->
+<!-- ROUTES HOME -->
 <div class="container" id="homeView" style="display:none;">
 
-  <div
-    style="
-      display:flex;
-      gap:10px;
-      justify-content:center;
-      margin-bottom:18px;
-      flex-wrap:wrap;
-    "
-  >
-    <button class="btn" onclick="setCategoryFilter('summer')">
-  Summer Routes
-</button>
+  <div id="routeCategories" class="category-grid">
 
-<button class="btn" onclick="setCategoryFilter('winter')">
-  Winter Routes
-</button>
+    <button
+      class="category-btn"
+      onclick="openCategory('summer')"
+    >
+      ☀️ Summer Routes
+    </button>
 
-<button class="btn" onclick="setCategoryFilter('drill')">
-  Drills
-</button>
+    <button
+      class="category-btn"
+      onclick="openCategory('winter')"
+    >
+      ❄️ Winter Routes
+    </button>
+
+    <button
+      class="category-btn"
+      onclick="openCategory('drill')"
+    >
+      🏃 Drills
+    </button>
+
   </div>
 
-  <div class="grid" id="routesGrid"></div>
-</div>
+  <div id="routesCatalogue" style="display:none;">
+    <div class="back" onclick="showRouteCategories()">
+      ← Back to Categories
+    </div>
 
+    <div class="grid" id="routesGrid"></div>
+  </div>
+
+</div>
 <!-- UPCOMING RUNS -->
 <div
   class="container"
@@ -468,27 +502,61 @@ function openRoute(route) {
   document.getElementById('routeView').style.display = 'none';
 
   // Rebuild route thumbnails when Routes tab opens
-  if (section === 'routes') {
-    setTimeout(() => {
-      renderGrid();
-    }, 50);
-  }
+if (section === 'routes') {
+  showRouteCategories();
 }
 function showHome() {
-  document.getElementById('routeView').style.display = 'none';
+  document.getElementById(
+    'routeView'
+  ).style.display = 'none';
 
-  document.getElementById('homeView').style.display =
-    previousSection === 'routes' ? 'block' : 'none';
+  document.getElementById(
+    'homeView'
+  ).style.display =
+    previousSection === 'routes'
+      ? 'block'
+      : 'none';
 
-  document.getElementById('scheduleView').style.display =
-    previousSection === 'schedule' ? 'block' : 'none';
-}
-loadRoutes();
+  document.getElementById(
+    'scheduleView'
+  ).style.display =
+    previousSection === 'schedule'
+      ? 'block'
+      : 'none';
 
-function setCategoryFilter(category) {
+  // if returning to routes,
+  // go back to category menu
+  if (previousSection === 'routes') {
+    showRouteCategories();
+  }
+}function setCategoryFilter(category) {
   activeCategory = category;
   renderGrid();
-}  
+}
+
+  function openCategory(category) {
+  activeCategory = category;
+
+  document.getElementById(
+    'routeCategories'
+  ).style.display = 'none';
+
+  document.getElementById(
+    'routesCatalogue'
+  ).style.display = 'block';
+
+  renderGrid();
+}
+
+function showRouteCategories() {
+  document.getElementById(
+    'routeCategories'
+  ).style.display = 'grid';
+
+  document.getElementById(
+    'routesCatalogue'
+  ).style.display = 'none';
+}
 </script>
 
 </body>
