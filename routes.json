@@ -234,6 +234,15 @@
     "duration": "30-40 mins",
     "image": "./images/skillsndrills.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises.\nHead out towards the path around the golf course/bell tower hill for 1 minute, turn around and try to get back in  the same time\nRepeat for 2mins, 3mins, 2mins, and finally 1min.\nOption for bell tower sprints  before heading back to the car park for cool down."
+},
+
+ {
+    "id": 104,
+    "name": "Golf Paths Triangles",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle to the top of Sainsbury's Hill.\nJog / Easy Run down the hill to the bottom of the Pitch & Putt Hill.\nStrong effort on the uphill to the stop line.\nRecovery slow jog or walk across the path back to the start. \nAfter two repetitions try it the opposite way, down pitch and putt hill easy and up Sainsburys Hill iwth effort.\nWhen you've had enough head back to the car park for cool down."
 }
  
 ]
