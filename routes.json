@@ -214,7 +214,7 @@
     "name": "Jo's Hill Sprints",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
      "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle over to the top of Angina.\nJog down to the first bin and max effort on the way back up. Same again for the second and third bins, then second bin then first again.\nAfter that any order or combination you want or just have a rest.\nFinish off with a few short ones to the third bench and back before heading back to the car park for cool down"
  },
 
@@ -223,7 +223,7 @@
     "name": "Trains",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall in a line/train at a comfortable (easy 5k) pace.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before heading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
  },
 
@@ -232,7 +232,7 @@
     "name": "Pyramids 1-2-3-2-1 ",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises.\nHead out towards the path around the golf course/bell tower hill for 1 minute, turn around and try to get back in the same time.\nRepeat for 2mins, 3mins, 2mins, and finally 1min.\nOption for bell tower sprints before heading back to the car park for cool down."
  },
 
@@ -241,7 +241,7 @@
     "name": "Golf Paths Triangles",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run to the Heaton Hall Lions for quick warm-up exercises then shuffle to the top of Sainsbury's Hill.\nJog / Easy Run down the hill to the bottom of the Pitch & Putt Hill.\nStrong effort on the uphill to the stop line.\nRecovery slow jog or walk across the path back to the top of Sainsbury' Hills. \nAfter two repetitions try it the opposite way, down Pitch and Putt Hill easy and up Sainsburys Hill with effort.\nWhen you've had enough head back to the car park for cool down."
  },
 
@@ -250,7 +250,7 @@
     "name": "Football Pitches",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run past the house down donkey hill turning right at the top of the field following the path to the football pitches.\nDo warm-ups round the perimiter.\nLine up in three or four 'teams' of equal numbers on the goal line of the pitch.\nThe first member of each team will sprint hard to the marker, a quarter of the way up the pitch, before jogging back.\nRepeat until all team members have done the first rep. Same again for the second rep but this time sprinting to the halfway line before jogging back.\nThird rep is three quarters and final rep is the full length of the pitch.\nMix it up as much as you like.\nOptional run around the pitch while the session leader shouts either left hand, right hand or both hands at random intervals. Runners must touch the floor as direccted before conitnuing to run.\nShort jog back to the car park for cool down stretches."
  },
 
@@ -259,7 +259,7 @@
     "name": "Horseshoe Meet & Retreat",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run past the house down Angina Hill turning right into the bowl two-thirds of the way down, then some quick warm-up exercises\nForm two groups at either end of the horseshoe path - picking your opponent carefully.\nFirst person in each line runs along the left hand side of the path until they meet, crossing over behind each other before running back to the start, again keeping to the left.\nThe idea is to get back before your opponent - but don't worry if your opponent is faster as this session has a natural handicap, so if you are both putting your best effort in then it should be reasonably evenly matched as the faster runner will have to run further.\nSwap sides after a few repetitions to see which side is 'easier'\nRun back to the car park for cool down stretches."
  },
 
@@ -268,7 +268,7 @@
     "name": "Loops of Despair",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run towards the top of Donkey Hill turning right past the farm centre, round the little pond, through the tunnel, down the hill and then up the path of the squirrels (alternatively you can just cut straight across to the start of the loops if you wish)\nRun down the forested path on the left, over the bridge at the bottom turning right and running alongside the stream. Head right up the path of the squirrels (with effort) and right at the top back to the start.\nEither do continuous loops or rest between them - however you feel.\nDo one final loop in reverse at the end before a short jog/walk back to the car park for cool down stretches."
  },
 
@@ -277,7 +277,7 @@
     "name": "Heritage Tram Sprints",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run towards the house and down to the bottom of Angina hill following the tram lines to the heritage tram museum.\nSprints to the bin near the gates followed by recovery jogs back. Repeat as desired. Optional shorter sprints of varying lengths using trees, lampposts etc. as finish points.\nGentle run/jog all the way back to the car park for cool down stretches."
  },
  
@@ -286,7 +286,7 @@
     "name": "Somme Triangle",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run towards the house and down to the bottom of Angina hill. Optional brief warm-up exercises\nRun up Angina Hill, take the first right and then right again down the side of the Somme. Repeat as required.\nGentle run/jog all the way back to the car park for cool down stretches."
  },
 
@@ -295,7 +295,7 @@
     "name": "Parkrun Final Kilometre",
     "category": "drill",
     "duration": "30-40 mins",
-    "image": "./images/skillsndrills.png",
+    "image": "./images/drillsgeneric.png",
     "description": "Run towards the house and then down Donkey Hill to cafe corner.\nRun the final kilometre of parkrun at maximum effort, down the path of the squirrels, round the back of the lake, left out of white gate, to the end opposite the benches.\nRecovery walk/jog back to the start of the final km and repeat.\nGentle run/jog all the back to the car park, via either Donkey Hill or up Blossom Crossroads, followed by cool down stretches."
 }
 ]
