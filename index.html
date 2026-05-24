@@ -67,14 +67,6 @@
       margin-top: 8px;
     }
 
-    .drill-thumb {
-    height: 120px;
-    border-radius: 8px;
-    margin-top: 8px;
-    width: 100%;
-    object-fit: cover;
-    }
-
     #routeView {
       display: none;
     }
@@ -146,9 +138,6 @@
     <button class="btn" onclick="setSeasonFilter('winter')">
       Winter Routes
     </button>
-
-    <button class="btn" onclick="setSeasonFilter('drill')">
-  Drills
   </div>
 
   <div class="grid" id="routesGrid"></div>
@@ -286,14 +275,45 @@ function renderSchedule() {
     grid.appendChild(div);
   });
 }
-.drill-thumb {
-  height: 120px;
-  border-radius: 8px;
-  margin-top: 8px;
-  width: 100%;
-  object-fit: cover;
+function renderGrid() {
+  const grid = document.getElementById('routesGrid');
+  grid.innerHTML = '';
+
+  const filteredRoutes =
+    activeSeason === 'all'
+      ? routes
+      : routes.filter(
+          r => (r.season || '').toLowerCase() === activeSeason
+        );
+
+  filteredRoutes.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'card';
+
+    div.innerHTML = `
+      <h3 class="route-title">${r.name}</h3>
+      <p>${r.distance} km</p>
+      <div class="map-thumb" id="thumb-${r.id}"></div>
+    `;
+
+    // Open detailed route view
+    div.addEventListener('click', () => {
+      previousSection = 'routes';
+      openRoute(r);
+    });
+
+    grid.appendChild(div);
+
+    // Wait until element exists in DOM
+    requestAnimationFrame(() => {
+      const el = document.getElementById(`thumb-${r.id}`);
+      if (el) {
+        initThumbMap(r);
+      }
+    });
+  });
 }
-  function initThumbMap(route, elementId = `thumb-${route.id}`) {
+function initThumbMap(route, elementId = `thumb-${route.id}`) {
   const map = L.map(elementId, {
     zoomControl: false,
     attributionControl: false,
@@ -316,8 +336,6 @@ function openScheduledRoute(run, route) {
 
   openRoute(route);
 
-  const isDrill = route.type === 'drill';
-
   document.getElementById('routeInfo').innerText =
     `${route.distance} km · ${run.runningGroup} · ${run.date} ${run.time}`;
 }
@@ -326,63 +344,23 @@ function openRoute(route) {
   document.getElementById('scheduleView').style.display = 'none';
   document.getElementById('routeView').style.display = 'block';
 
-  const isDrill = route.season === 'drill';
+  // Re-show hidden elements
+  document.getElementById('map').style.display = 'block';
+  document.getElementById('stravaLink').style.display = 'inline-block';
+  document.getElementById('gpxDownload').style.display = 'inline-block';
 
-  document.getElementById('routeName').innerText =
-    route.name;
+  document.getElementById('routeName').innerText = route.name;
+  document.getElementById('routeInfo').innerText =
+    route.distance + ' km';
 
   document.getElementById('routeDescription').innerText =
     route.description || '';
 
-  if (isDrill) {
-    document.getElementById('routeInfo').innerText =
-      route.duration || '';
-
-    // replace map with image
-    document.getElementById('map').innerHTML = `
-      <img
-        src="${route.image}"
-        alt="${route.name}"
-        style="
-          width:100%;
-          border-radius:12px;
-          max-height:500px;
-          object-fit:cover;
-        "
-      />`;
-
-    // hide buttons
-    document.getElementById('stravaLink').style.display =
-      'none';
-
-    document.getElementById('gpxDownload').style.display =
-      'none';
-
-    return;
-  }
-
-  // normal route behaviour
-  document.getElementById('routeInfo').innerText =
-    `${route.distance} km`;
-
-  document.getElementById('map').style.display = 'block';
-
-  document.getElementById('stravaLink').style.display =
-    'inline-block';
-
-  document.getElementById('gpxDownload').style.display =
-    'inline-block';
-
-  document.getElementById('stravaLink').href =
-    route.strava || '#';
-
-  document.getElementById('gpxDownload').href =
-    route.gpx || '';
+  document.getElementById('stravaLink').href = route.strava || '#';
+  document.getElementById('gpxDownload').href = route.gpx || '';
 
   setTimeout(() => {
     if (map) map.remove();
-
-    document.getElementById('map').innerHTML = '';
 
     map = L.map('map').setView([53.6, -2.1], 13);
 
@@ -393,20 +371,17 @@ function openRoute(route) {
     if (route.gpx) {
       gpxLayer = new L.GPX(route.gpx, {
         async: true,
-        polyline_options: {
-          color: 'purple'
-        }
+        polyline_options: { color: 'purple' }
       })
       .on('loaded', function(e) {
-        map.fitBounds(
-          e.target.getBounds()
-        );
+        map.fitBounds(e.target.getBounds());
       })
       .addTo(map);
     }
+
   }, 100);
 }
-  function showSection(section) {
+function showSection(section) {
   previousSection = section;
 
   document.getElementById('homeView').style.display =
