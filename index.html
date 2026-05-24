@@ -441,22 +441,35 @@ function openRoute(route) {
   document.getElementById('routeDescription').innerText =
     route.description || '';
 
-  if (isDrill) {
-    document.getElementById('routeInfo').innerText =
-      route.duration || '';
+if (isDrill) {
+  document.getElementById('routeInfo').innerText =
+    route.duration || '';
 
-    // replace map with image
-    document.getElementById('map').innerHTML = `
-      <img
-        src="${route.image}"
-        alt="${route.name}"
-        style="
-          width:100%;
-          border-radius:12px;
-          max-height:500px;
-          object-fit:cover;
-        "
-      />`;
+  // Remove fixed map height for drills
+  document.getElementById('map').style.height =
+    'auto';
+
+  document.getElementById('map').innerHTML = `
+    <img
+      src="${route.image}"
+      alt="${route.name}"
+      style="
+        width:100%;
+        border-radius:12px;
+        max-height:500px;
+        object-fit:cover;
+        display:block;
+      "
+    />`;
+
+  document.getElementById('stravaLink').style.display =
+    'none';
+
+  document.getElementById('gpxDownload').style.display =
+    'none';
+
+  return;
+}
 
     // hide buttons
     document.getElementById('stravaLink').style.display =
@@ -473,6 +486,9 @@ function openRoute(route) {
     `${route.distance} km`;
 
   document.getElementById('map').style.display = 'block';
+
+  document.getElementById('map').style.height =
+  '60vh';
 
   document.getElementById('stravaLink').style.display =
     'inline-block';
