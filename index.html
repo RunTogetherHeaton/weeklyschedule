@@ -198,8 +198,15 @@
 
   <h2 id="routeName"></h2>
   <p id="routeInfo"></p>
-  <p id="routeDescription" style="color:#c7cedb; line-height:1.6; max-width:800px;"></p>
-
+  <p
+    id="routeDescription"
+    style="
+    color:#c7cedb;
+    line-height:1.6;
+    max-width:800px;
+    white-space:pre-line;
+  "
+></p>
   <div id="map"></div>
 
   <a id="stravaLink" class="btn" target="_blank">Open in Strava</a>
@@ -499,12 +506,16 @@ function openRoute(route) {
   document.getElementById('scheduleView').style.display =
     section === 'schedule' ? 'block' : 'none';
 
-  document.getElementById('routeView').style.display = 'none';
+  document.getElementById('routeView').style.display =
+    'none';
 
-  // Rebuild route thumbnails when Routes tab opens
-if (section === 'routes') {
-  showRouteCategories();
+  // When Routes tab opens,
+  // show category buttons first
+  if (section === 'routes') {
+    showRouteCategories();
+  }
 }
+
 function showHome() {
   document.getElementById(
     'routeView'
@@ -524,17 +535,19 @@ function showHome() {
       ? 'block'
       : 'none';
 
-  // if returning to routes,
-  // go back to category menu
+  // If returning to routes,
+  // show category menu
   if (previousSection === 'routes') {
     showRouteCategories();
   }
-}function setCategoryFilter(category) {
+}
+
+function setCategoryFilter(category) {
   activeCategory = category;
   renderGrid();
 }
 
-  function openCategory(category) {
+function openCategory(category) {
   activeCategory = category;
 
   document.getElementById(
@@ -557,6 +570,9 @@ function showRouteCategories() {
     'routesCatalogue'
   ).style.display = 'none';
 }
+
+loadRoutes();
+
 </script>
 
 </body>
