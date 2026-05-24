@@ -441,41 +441,23 @@ function openRoute(route) {
   document.getElementById('routeDescription').innerText =
     route.description || '';
 
-if (isDrill) {
-  document.getElementById('routeInfo').innerText =
-    route.duration || '';
+  if (isDrill) {
+    document.getElementById('routeInfo').innerText =
+      route.duration || '';
 
-  const mapEl = document.getElementById('map');
+    // replace map with image
+    document.getElementById('map').innerHTML = `
+      <img
+        src="${route.image}"
+        alt="${route.name}"
+        style="
+          width:100%;
+          border-radius:12px;
+          max-height:500px;
+          object-fit:cover;
+        "
+      />`;
 
-  // Remove Leaflet map if one exists
-  if (map) {
-    map.remove();
-    map = null;
-  }
-
-  // Shrink container to image size
-  mapEl.style.height = 'auto';
-
-  mapEl.innerHTML = `
-    <img
-      src="${route.image}"
-      alt="${route.name}"
-      style="
-        width:100%;
-        border-radius:12px;
-        display:block;
-      "
-    />
-  `;
-
-  document.getElementById('stravaLink').style.display =
-    'none';
-
-  document.getElementById('gpxDownload').style.display =
-    'none';
-
-  return;
-}
     // hide buttons
     document.getElementById('stravaLink').style.display =
       'none';
@@ -492,9 +474,6 @@ if (isDrill) {
 
   document.getElementById('map').style.display = 'block';
 
-  document.getElementById('map').style.height =
-  '60vh';
-
   document.getElementById('stravaLink').style.display =
     'inline-block';
 
@@ -507,9 +486,6 @@ if (isDrill) {
   document.getElementById('gpxDownload').href =
     route.gpx || '';
 
-  document.getElementById('map').style.height =
-  '60vh';
-  
   setTimeout(() => {
     if (map) map.remove();
 
