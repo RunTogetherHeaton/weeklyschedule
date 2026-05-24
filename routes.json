@@ -211,10 +211,13 @@
 
  {
     "id": 101,
-    "name": "Hill Sprint Session",
+    "name": "Jo's Hill Sprint Session",
     "category": "drill",
-    "duration": "20–30 mins",
-    "image": "./images/test.png",
-    "description": "8 × 20 sec hill sprints with jog recovery."
+    "duration": "30-40 mins",
+    "image": "./images/skillsndrills.png",
+    "description": "Run to the Heaton Hall Lions for a quick warm-up exercises then shuffle over to the top of Angina. <br> 
+    Jog down to the first bin and max effort on way back. Same again for the second and third bins then second then first. <br>
+    After that any order/combination you want or just have a rest. <br>
+    Finish off with a few short ones to the third bench before heading back to the car park for cool down"
   }
 ]
