@@ -6,7 +6,7 @@
     "category": "winter",
     "gpx": "./gpx/3-2-1 Loops.gpx",
     "strava": "https://www.strava.com/routes/3315794949942727652",
-    "description": "Big Loop -Up St Marys left onto BNR, Left onto Scholes, Left onto BOR, Left at HP Tram Stop Down Whittaker over roundabout and back to start. Middle Loop. Same start St Marys-BNR-Scholes, first left onto Heywood Road, left at Rectory back to St Marys. Small Loop - St Marys-BNR, left onto Park View Road, Left onto Heywood, Left onto Rectory back to St Marys."
+    "description": "Big Loop - Up St Marys left onto BNR, Left onto Scholes, Left onto BOR, Left at HP Tram Stop Down Whittaker over roundabout and back to start. Middle Loop - Same start St Marys-BNR-Scholes, first left onto Heywood Road, left at Rectory back to St Marys. Small Loop - St Marys-BNR, left onto Park View Road, Left onto Heywood, Left onto Rectory back to St Marys."
  },
 
  {
@@ -224,7 +224,7 @@
     "category": "drill",
     "duration": "30-40 mins",
     "image": "./images/drillsgeneric.png",
-    "description": "Run to the Heaton Hall Lions for quick warm-up exercises .\nForm trains of 4-5 people and run round the hall in a line/train at a comfortable (easy 5k) pace.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace (and giving a 'toot-toot') to signal the new back person to commence their sprint.\nComplete as many loops as is comfortable before heading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
+    "description": "Run to the Heaton Hall Lions for quick warm-up exercises.\nForm trains of 4-5 people and run round the hall in a line/train at a comfortable (easy 5k) pace.\nThe back person must sprint to the front of the train before settling back in to their comfortable pace, giving a 'toot-toor' so the new back person knows to start their sprint.\nComplete as many loops as is comfortable before heading back to the car park for cool down.\nNB optional bell tower sprints depending on the sadistic tendencies of the session leader!"
  },
 
  {
@@ -297,5 +297,5 @@
     "duration": "30-40 mins",
     "image": "./images/drillsgeneric.png",
     "description": "Run towards the house and then down Donkey Hill to cafe corner.\nRun the final kilometre of parkrun at maximum effort, down the path of the squirrels, round the back of the lake, left out of white gate, to the end opposite the benches.\nRecovery walk/jog back to the start of the final km and repeat.\nGentle run/jog all the back to the car park, via either Donkey Hill or up Blossom Crossroads, followed by cool down stretches."
-}
+ }
 ]
