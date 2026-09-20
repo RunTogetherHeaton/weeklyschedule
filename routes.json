@@ -297,5 +297,14 @@
     "duration": "30-40 mins",
     "image": "./images/drillsgeneric.png",
     "description": "Run towards the house and then down Donkey Hill to cafe corner.\nRun the final kilometre of parkrun at maximum effort, down the side of the lake, round the back of the lake, left out of white gate, to the end opposite the benches.\nRecovery walk/jog back to the start of the final km and repeat.\nGentle run/jog all the back to the car park, via either Donkey Hill or up Blossom Crossroads, followed by cool down stretches."
+ },
+
+ {
+    "id": 111,
+    "name": "Jo's Speed Session",
+    "category": "drill",
+    "duration": "30-40 mins",
+    "image": "./images/drillsgeneric.png",
+    "description": "Run to the lions followed by warm up exercises; then starting just past the lions near the car park end of the hall, sprints towards the path round the back of the golf course: \n45 seconds out, 90 seconds recovery jog back x 4. \n30 seconds out, 60 seconds recovery jog back x 5.\n15 seconds out 30 seconds recovery jog back x 6.\nGentle run/jog all the back to the car park, followed by cool down stretches."
  }
 ]
