@@ -150,6 +150,16 @@
  },
  
  {
+    "id": "cloughcorkscrew",
+    "name": "Clough Corkscrew - Clough down to Irwell and back past Dams Head Lodge",
+    "distance": 5.64,
+    "category": "summer",
+    "gpx": "./gpx/Clough Corkscrew.gpx",
+    "strava": "https://www.strava.com/routes/3538586342590219184",
+    "description": "Up St Mary's Rd crossing over Bury New Rd (safely). Into the Clough through the flower garden. Continue along the Clough with the brook on your right taking a left just past Buckley Lane. Follow the path as it bends round to the right and turn left at the end. Turn right towards the Irwell and follow the path back up running along with the Irwell on your left. You should reach a junction with a signpost with four directions. Turn right until you reach Dams Head Lodge and then right again. Take a left back towards the Clough and run through the Clough back to St. Mary's Park."
+ },
+
+ {
     "id": "henryboddies",
     "name": "Henry Boddingtons O&B",
     "distance": 8.07,
