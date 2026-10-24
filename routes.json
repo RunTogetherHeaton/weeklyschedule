@@ -20,6 +20,16 @@
  },
 
  {
+    "id": "presthillsshorter",
+    "name": "Prestwich Hills Loops (Shorter Warm-Up)",
+    "distance": 5.64,
+    "category": "winter",
+    "gpx": "./gpx/RTH - Prestwich Hills Shorter Warm-Up.gpx",
+    "strava": "https://www.strava.com/routes/3549088604211079636",
+    "description": "Exit through the park towards Bury New Road, crossing over and heading left towards Manchester. Turn right up Butterstile. At this point you either have the option of running straight to Prestwich Hills (the second road on the left), or a slightly longer warm up. The longer warm-up takes the first left off Butterstile onto Barnhill Rd continuing onto Agecroft Rd East until you reach a mini roundabout where you will turn right onto Sandy Lane. Continue along Sandy Lane until you reach the junction with Butterstile and turn right running up Butterstile to Prestwich Hills to re-group.  We will then do a few loops of Prestwich Hills in either direction before returning to the park via Butterstile / Bury New Road."
+ },
+
+ {
     "id": "sameyet",
     "name": "Same Yet O&B",
     "distance": 7.95,
