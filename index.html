@@ -258,7 +258,7 @@ function renderSchedule() {
   const upcoming = scheduledRuns
     .filter(run => {
       const runDate = new Date(run.date);
-      runDate.setHours(22, 0, 0, 0);
+      runDate.setHours(0, 0, 0, 0);
       return runDate >= today;
     })
     .sort((a, b) => new Date(a.date) - new Date(b.date));
