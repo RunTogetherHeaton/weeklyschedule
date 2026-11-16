@@ -252,13 +252,29 @@ function renderSchedule() {
   const grid = document.getElementById('scheduleGrid');
   grid.innerHTML = '';
 
-  const now = new Date();
+  
+const now = new Date();
 
 const upcoming = scheduledRuns
   .filter(run => {
 
-    // Get the scheduled run date
-    const runDate = new Date(run.date);
+    // Correctly interpret UK dates (DD/MM/YYYY)
+    const dateParts = String(run.date).split('/');
+
+    let runDate;
+
+    if (dateParts.length === 3) {
+      runDate = new Date(
+        Number(dateParts[2]),
+        Number(dateParts[1]) - 1,
+        Number(dateParts[0])
+      );
+    } else {
+      runDate = new Date(run.date);
+    }
+
+    // Check that the date is valid
+    if (isNaN(runDate.getTime())) return false;
 
     // Add the scheduled start time
     const [hours, minutes] = (run.time || '00:00')
@@ -267,8 +283,10 @@ const upcoming = scheduledRuns
 
     runDate.setHours(hours, minutes, 0, 0);
 
-    // Keep the run visible until 2 hours after it starts
-    const expiryTime = new Date(runDate.getTime() + (4 * 60 * 60 * 1000));
+    // Expire 4 hours after the start time
+    const expiryTime = new Date(
+      runDate.getTime() + (4 * 60 * 60 * 1000)
+    );
 
     return expiryTime > now;
   })
