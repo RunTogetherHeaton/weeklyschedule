@@ -253,42 +253,33 @@ function renderSchedule() {
   grid.innerHTML = '';
 
   
-const now = new Date();
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
 
 const upcoming = scheduledRuns
   .filter(run => {
 
-    // Correctly interpret UK dates (DD/MM/YYYY)
-    const dateParts = String(run.date).split('/');
+    // Use the original date handling
+    const runDate = new Date(run.date);
 
-    let runDate;
-
-    if (dateParts.length === 3) {
-      runDate = new Date(
-        Number(dateParts[2]),
-        Number(dateParts[1]) - 1,
-        Number(dateParts[0])
-      );
-    } else {
-      runDate = new Date(run.date);
-    }
-
-    // Check that the date is valid
+    // Ignore invalid dates
     if (isNaN(runDate.getTime())) return false;
 
-    // Add the scheduled start time
+    // Read the scheduled time
     const [hours, minutes] = (run.time || '00:00')
       .split(':')
       .map(Number);
 
+    // Set the actual start time
     runDate.setHours(hours, minutes, 0, 0);
 
-    // Expire 4 hours after the start time
+    // Expire 4 hours after the start
     const expiryTime = new Date(
-      runDate.getTime() + (4 * 60 * 60 * 1000)
+      runDate.getTime() + 4 * 60 * 60 * 1000
     );
 
-    return expiryTime > now;
+    return expiryTime > new Date();
   })
   .sort((a, b) => new Date(a.date) - new Date(b.date));
   
