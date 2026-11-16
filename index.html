@@ -252,17 +252,28 @@ function renderSchedule() {
   const grid = document.getElementById('scheduleGrid');
   grid.innerHTML = '';
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const now = new Date();
 
-  const upcoming = scheduledRuns
-    .filter(run => {
-      const runDate = new Date(run.date);
-      runDate.setHours(0, 0, 0, 0);
-      return runDate >= today;
-    })
-    .sort((a, b) => new Date(a.date) - new Date(b.date));
+const upcoming = scheduledRuns
+  .filter(run => {
 
+    // Get the scheduled run date
+    const runDate = new Date(run.date);
+
+    // Add the scheduled start time
+    const [hours, minutes] = (run.time || '00:00')
+      .split(':')
+      .map(Number);
+
+    runDate.setHours(hours, minutes, 0, 0);
+
+    // Keep the run visible until 2 hours after it starts
+    const expiryTime = new Date(runDate.getTime() + (4 * 60 * 60 * 1000));
+
+    return expiryTime > now;
+  })
+  .sort((a, b) => new Date(a.date) - new Date(b.date));
+  
   upcoming.forEach(run => {
     const route = routes.find(
       r => String(r.id) === String(run.routeId)
