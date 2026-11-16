@@ -252,43 +252,16 @@ function renderSchedule() {
   const grid = document.getElementById('scheduleGrid');
   grid.innerHTML = '';
 
-  
-
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 
 const upcoming = scheduledRuns
   .filter(run => {
-
-    // Use the original date handling
     const runDate = new Date(run.date);
-
-    // Ignore invalid dates
-    if (isNaN(runDate.getTime())) return false;
-
-    // Read the scheduled time
-    const [hours, minutes] = (run.time || '00:00')
-      .split(':')
-      .map(Number);
-
-    // Set the actual start time
-    runDate.setHours(hours, minutes, 0, 0);
-
-    // Expire 4 hours after the start
-    const expiryTime = new Date(
-      runDate.getTime() + 4 * 60 * 60 * 1000
-    );
-
-    return expiryTime > new Date();
+    runDate.setHours(0, 0, 0, 0);
+    return runDate >= today;
   })
-  .sort((a, b) => new Date(a.date) - new Date(b.date));
-  
-  upcoming.forEach(run => {
-    const route = routes.find(
-      r => String(r.id) === String(run.routeId)
-    );
-
-    const div = document.createElement('div');
+  .sort((a, b) => new Date(a.date) - new Date(b.date));    const div = document.createElement('div');
     div.className = 'card';
 
     const formattedDate = new Date(run.date)
